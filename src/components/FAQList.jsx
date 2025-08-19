@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import FAQItem from './FAQItem'
 import faqData from '../data/faqData'
 
@@ -21,7 +22,6 @@ const FAQList = ({ toggleDarkMode, darkMode }) => {
     setExpandAll((prev) => !prev)
     setOpenId(null)
   }
-
 
   return (
     <div className='max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12'>
